@@ -85,10 +85,3 @@
 ### If you don't like default Heroku options for Java:
 * You can set custom Java flags in `ADDITIONAL_JAVA_OPTIONS` variable. They **override** default config. **Do not** do this if you don't know what you're doing
 
-## Credits
-* [F4stZ4p](https://github.com/F4stZ4p/HLavalink)
-
-### Contact
-* [Join Discord](https://discord.gg/HKtQmtj)
-* [Instagram](https://www.instagram.com/cyraxx.py)
-* [Website](https://cyraxx.gitbook.io/cyraxx)
