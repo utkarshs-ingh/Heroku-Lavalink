@@ -10,7 +10,7 @@ class lavalinkserver:
         self.change_password = 'sed -i "s|DYNAMICPASSWORD|$PASSWORD|" application.yml'
         self.no_password = 'sed -i "s|DYNAMICPASSWORD|youshallnotpass|" application.yml'
         self.additional = environ.get("ADDITIONAL_JAVA_OPTIONS")
-        self.run_command = f"java -jar Lavalink.jar {self.additional}"
+        self.run_command = f"java -jar Lavalink.jar -Djdk.tls.client.protocols=TLSv1.2"
 
     def password_and_port(self):
         print("[INFO] Changing the port and password ...")
@@ -36,7 +36,7 @@ class lavalinkserver:
             print("[INFO] Success in downloading Lavalink...")
     
     def run(self):
-        self.download()
+        # self.download()
         self.password_and_port()
         print("[INFO] Starting lavalink.")
         try:
